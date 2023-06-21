@@ -37,7 +37,7 @@ function light_white() {
     var script = document.createElement("script");
     script.type = "text/javascript";
     script.id = "fish_type";
-    script.src = "https://gitee.com/hc0214/cute-cnblogs/raw/master/js/fish.js";
+    script.src = "https://cdn.staticaly.com/gh/HcGys/cute-cnblogs@master/myblogs/js/fish.js";
     document.body.appendChild(script);
   }
 }
@@ -46,7 +46,7 @@ function furvous() {
   var link = document.createElement("link");
   link.rel = "stylesheet";
   link.id = "darkly";
-  link.href = "https://gitee.com/hc0214/cute-cnblogs/raw/master/css/darkly.css";
+  link.href = "https://cdn.staticaly.com/gh/HcGys/cute-cnblogs@master/myblogs/css/darkly.css";
   document.body.appendChild(link);
   $("#fish_script").remove();
   if (mobile_flag) {
@@ -55,7 +55,7 @@ function furvous() {
     var script = document.createElement("script");
     script.type = "text/javascript";
     script.id = "fish_type";
-    script.src = "https://gitee.com/hc0214/cute-cnblogs/raw/master/js/fish2.js";
+    script.src = "https://cdn.staticaly.com/gh/HcGys/cute-cnblogs@master/myblogs/js/fish2.js";
     document.body.appendChild(script);
   }
 }
@@ -64,7 +64,7 @@ function reading() {
   var link = document.createElement("link");
   link.rel = "stylesheet";
   link.id = "reading";
-  link.href = "https://gitee.com/hc0214/cute-cnblogs/raw/master/css/reading.css";
+  link.href = "https://cdn.staticaly.com/gh/HcGys/cute-cnblogs@master/myblogs/css/reading.css";
   document.body.appendChild(link);
   $("#fish_script").remove();
   $("#jsi-flying-fish-container").html("");
@@ -73,7 +73,7 @@ function reading() {
     var script = document.createElement("script");
     script.type = "text/javascript";
     script.id = "fish_type";
-    script.src = "https://gitee.com/hc0214/cute-cnblogs/raw/master/js/fish3.js";
+    script.src = "https://cdn.staticaly.com/gh/HcGys/cute-cnblogs@master/myblogs/js/fish3.js";
     document.body.appendChild(script);
   }
 }
