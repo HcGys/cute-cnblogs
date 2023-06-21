@@ -1,0 +1,249 @@
+@import url("https://www.cnblogs.com/css/hljs/gruvbox-light.css");
+
+.cnb-code-toolbar {
+    background: transparent !important;
+    color: #808d94;
+}
+
+/*主题色更换-阅读模式reading*/
+body {
+    background: #FFF9DD;
+}
+
+#navigator {
+    background: hsla(49, 100%, 97%, .6);
+}
+
+/* div#catalogue{background: #FFF9DD;} */
+div#sideBarMain {
+    background-color: transparent !important;
+}
+
+.table-wrapper>table>thead>tr>th {
+    background: hsl(60deg 100% 97% / 60%) !important;
+}
+
+.comment_textarea,
+#sideBar {
+    background-color: hsla(49, 100%, 97%, .6) !important;
+}
+
+div#sideBar {
+    background: transparent !important;
+}
+
+.OwO .OwO-logo {
+    background: hsla(49, 100%, 97%, .6) !important;
+}
+
+.cnblogs-markdown code,
+.cnblogs-post-body code {
+    background: hsla(49, 100%, 97%, .6);
+}
+
+.OwO-items-show,
+.OwO-bar {
+    background: transparent !important;
+}
+
+.OwO .OwO-body .OwO-items .OwO-item {
+    /*     background: #495a60!important; */
+    background: hsla(49, 100%, 97%, .6);
+    color: #7fa7bf;
+}
+
+.OwO-packages {
+    background: transparent !important;
+    padding-bottom: 5px;
+    color: #7fa7bf;
+}
+
+.OwO-package-active {
+    background: hsla(49, 100%, 97%, .6);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    color: #7fa7bf;
+    border-radius: 7px;
+}
+
+.OwO-packages>li:hover {
+    background: hsla(49, 100%, 97%, .6);
+    border-radius: 7px;
+}
+
+.OwO-packages>li {
+    background: hsla(49, 100%, 97%, .6);
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: none;
+    border-radius: 7px !important;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.OwO-packages>li:hover {
+    background: #eee;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    -webkit-animation: a 5s infinite ease-in-out;
+    animation: a 5s infinite ease-in-out;
+}
+
+.OwO-bar {
+    border-top: 1px solid hsla(49, 100%, 97%, .6);
+}
+
+.OwO .OwO-body {
+    background: hsla(49, 100%, 97%, .6);
+    border: 1px solid #dddddd;
+    box-shadow: rgb(121 121 121) 0px 2px 8px;
+    backdrop-filter: blur(8px);
+}
+
+@media (max-width: 767px) {
+    #set_btn_box {
+        background: hsla(49, 100%, 97%, .6)
+    }
+
+    div#sideBar {
+        background-color: transparent !important;
+    }
+
+    div#sideBarMain,
+    div#catalogue {
+        /* background-color: hsla(0,0%,100%,0.1)!important; */
+        background-color: hsla(49, 100%, 93%, 0.6) !important;
+        backdrop-filter: blur(10px);
+    }
+
+}
+
+@media only screen and (max-width:1300px) {
+    #set_btn_box {
+        background: hsla(49, 100%, 97%, .6)
+    }
+
+    div#sideBar {
+        background-color: transparent !important;
+    }
+
+    div#sideBarMain,
+    div#catalogue {
+        /* background-color: hsla(0,0%,100%,0.1)!important; */
+        background-color: hsla(49, 100%, 93%, 0.6) !important;
+        backdrop-filter: blur(10px);
+    }
+}
+
+@media(max-width:1000px) {
+    #set_btn_box {
+        background: hsla(49, 100%, 97%, .6)
+    }
+
+    div#sideBar {
+        background-color: transparent !important;
+    }
+
+    div#sideBarMain,
+    div#catalogue {
+        /* background-color: hsla(0,0%,100%,0.1)!important; */
+        background-color: hsla(49, 100%, 93%, 0.6) !important;
+        backdrop-filter: blur(10px);
+    }
+
+}
+
+@media(max-width:1500px) {
+    #set_btn_box {
+        /* background: hsla(49,100%,97%,.6)*/
+        background: transparent !important;
+    }
+
+    div#sideBar {
+        background-color: transparent !important;
+    }
+
+    div#sideBarMain,
+    div#catalogue {
+        /* background-color: hsla(0,0%,100%,0.1)!important; */
+        background-color: hsla(49, 100%, 93%, 0.6) !important;
+        backdrop-filter: blur(10px);
+    }
+
+}
+
+@media(min-width:767px) and (max-width:960px) {
+    #set_btn_box {
+        background: hsla(49, 100%, 97%, .6)
+    }
+
+    div#sideBar {
+        background-color: transparent !important;
+    }
+
+    div#sideBarMain,
+    div#catalogue {
+        /* background-color: hsla(0,0%,100%,0.1)!important; */
+        background-color: hsla(49, 100%, 93%, 0.6) !important;
+        backdrop-filter: blur(10px);
+    }
+
+}
+
+.feedbackCon .blog_comment_body {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+    margin: -7px 0 25px 5px;
+    top: 18px;
+    max-width: 72%;
+    border-radius: 10px;
+    padding: 6px 10px;
+    backdrop-filter: blur(4px);
+    background-color: transparent;
+}
+
+
+#blog-comments-placeholder .custom-comments-author .blog_comment_body:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -14px;
+    top: 6px;
+    width: 6px;
+    height: 0;
+    border-left: solid 12px hsla(49, 100%, 93%, 0.6) !important;
+    border-top: solid 8px rgba(0, 0, 0, 0);
+    border-bottom: solid 8px rgba(0, 0, 0, 0);
+}
+
+*::-webkit-scrollbar-thumb {
+    height: 40px;
+    background-color: #FFF9DD !important;
+    border-radius: 16px;
+}
+
+.set_btn {
+    background: #FFF9DD !important;
+}
+
+.cnb-code-toolbar>* {
+    color: #86762b !important;
+    background-color: transparent !important;
+}
+
+pre:not([data-dark-theme]) .cnb-code-toolbar {
+    --cnb-code-toolbar-mix-blend-mode: none !important;
+}
+
+#cnblogs_post_body table {
+    overflow-x: overlay;
+    overflow: auto
+}
+
+#cnblogs_post_body table::-webkit-scrollbar-track {
+    display: none;
+}
+
+#cnblogs_post_body table::-webkit-scrollbar {
+    background-color: transparent
+}
