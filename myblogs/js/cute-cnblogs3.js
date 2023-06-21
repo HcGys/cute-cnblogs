@@ -46,7 +46,7 @@ function furvous() {
   var link = document.createElement("link");
   link.rel = "stylesheet";
   link.id = "darkly";
-  link.href = "https://cdn.staticaly.com/gh/HcGys/cute-cnblogs@master/myblogs/css/darkly.css";
+  link.href = "https://cute-cnblogs.pages.dev/myblogs/css/darkly.css";
   document.body.appendChild(link);
   $("#fish_script").remove();
   if (mobile_flag) {
@@ -64,7 +64,7 @@ function reading() {
   var link = document.createElement("link");
   link.rel = "stylesheet";
   link.id = "reading";
-  link.href = "https://cdn.staticaly.com/gh/HcGys/cute-cnblogs@master/myblogs/css/reading.css";
+  link.href = "https://cute-cnblogs.pages.dev/myblogs/css/reading.css";
   document.body.appendChild(link);
   $("#fish_script").remove();
   $("#jsi-flying-fish-container").html("");
