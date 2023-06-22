@@ -410,7 +410,7 @@ let pic = document.querySelector('#blogTitle')
 
 window.addEventListener('scroll',function(e){
   let t = $('body, html').scrollTop();   // 目前监听的是整个body的滚动条距离
-  if(t > pic.style.height){
+  if(t > pic.offsetHeight){
     nav.style.position = 'fixed'
     nav.style.top = '0px'
   }else{
