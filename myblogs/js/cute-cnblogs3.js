@@ -407,7 +407,7 @@ $(window).resize(function () {
 // });
 let nav = document.querySelector('#navigator')
 let pic = document.querySelector('#blogTitle')
-let poem = document.querySelector('#poem-wrap')
+let poem = document.querySelector('.poem-wrap')
 
 window.addEventListener('scroll', function (e) {
   let t = $('body, html').scrollTop();   // 目前监听的是整个body的滚动条距离
