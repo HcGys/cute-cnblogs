@@ -434,7 +434,7 @@ $(".catalogue_btn").click(function () {
     $("#catalogue").css("display", "inline-block");
     $("#catalogue").attr(
       "style",
-      "visibility: visible; clip-path: circle(100% at 50% 50%); transition: all 0.3s ease-in-out 0s;" + 'position: fixed; right: 7em; top:' + nav.offsetHeight + 'px;'
+      "visibility: visible; clip-path: circle(100% at 50% 50%); transition: all 0.3s ease-in-out 0s;"
     );
     $("#sideBar").attr(
       "style",
@@ -697,7 +697,7 @@ function showSide(cla) {
       $("#sideBar").css("display", "inline-block");
       $("#sideBar").attr(
         "style",
-        "visibility: visible; clip-path: circle(100% at 50% 50%); transition: all 0.3s ease-in-out 0s;" + 'position: fixed; right: 7em; top:' + nav.offsetHeight + 'px;'
+        "visibility: visible; clip-path: circle(100% at 50% 50%); transition: all 0.3s ease-in-out 0s;"
       );
     } else {
       $("#sideBar").attr(
@@ -778,12 +778,12 @@ $(".catalogue").click(function () {
     if (w > 1300) {
       $("#sideBar").attr(
         "style",
-        "visibility: visible; clip-path: circle(100% at 50% 50%); transition: all 0.3s ease-in-out 0s;" + 'position: fixed; right: 7em; top:' + nav.offsetHeight + 'px;'
+        "visibility: visible; clip-path: circle(100% at 50% 50%); transition: all 0.3s ease-in-out 0s;"
       );
     } else {
       $("#sideBar").attr(
         "style",
-        "visibility: visible; clip-path: circle(100% at 50% 50%); transition: all 0.3s ease-in-out 0s;" + 'position: fixed; right: 7em; top:' + nav.offsetHeight + 'px;'
+        "visibility: visible; clip-path: circle(100% at 50% 50%); transition: all 0.3s ease-in-out 0s;"
       );
     }
     localStorage.setItem("catalogue", "show");
