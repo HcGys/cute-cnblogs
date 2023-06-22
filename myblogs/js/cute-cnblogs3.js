@@ -416,6 +416,7 @@ window.addEventListener('scroll', function (e) {
     pic.setAttribute('style', 'margin-bottom: 50.234px')
   } else {
     nav.style.position = 'static'
+    pic.setAttribute('style', 'margin-bottom: 0')
   }
 })
 
