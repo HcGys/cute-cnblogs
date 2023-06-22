@@ -367,44 +367,44 @@ $(window).resize(function () {
     }
   }
 });
-var oInfo = $(".blogTitle");
-var json = $("#navigator").offset();
-var oTop = json.top;
-var sTop = 0;
-var sTop2 = 0;
-$(window).scroll(function () {
-  sTop = $(this).scrollTop();
-  oInfo.text(sTop + "-" + oTop);
-  if (sTop >= oTop) {
-    if (sTop2 <= sTop) {
-      $("#navigator").css({ position: "static" });
-      $("#blogTitle").css({ "margin-bottom": "0" });
-    } else {
-      $("#navigator").css({ position: "fixed", top: "0" });
-      $("#blogTitle").css({ "margin-bottom": "100px" });
-    }
-  } else {
-    $("#navigator").css({ position: "static" });
-    $("#blogTitle").css({ "margin-bottom": "0" });
-  }
-  sTop2 = sTop;
-  var scroHei = $(window).scrollTop();
-  if (scroHei > 500) {
-    $(".fly_top").css("display", "inline-block");
-    $(".catalogueMain").attr(
-      "style",
-      "position:fixed;top:10px;width:230px;height:calc(100% - 100px);overflow:auto"
-    );
-    $("#sideBarMain").attr(
-      "style",
-      "position:fixed;top:10px;width:230px;height:calc(100% - 100px);overflow:auto"
-    );
-  } else {
-    $(".fly_top").css("display", "none");
-    $(".catalogueMain").attr("style", "");
-    $("#sideBarMain").attr("style", "");
-  }
-});
+// var oInfo = $(".blogTitle");
+// var json = $("#navigator").offset();
+// var oTop = json.top;
+// var sTop = 0;
+// var sTop2 = 0;
+// $(window).scroll(function () {
+//   sTop = $(this).scrollTop();
+//   oInfo.text(sTop + "-" + oTop);
+//   if (sTop >= oTop) {
+//     if (sTop2 <= sTop) {
+//       $("#navigator").css({ position: "static" });
+//       $("#blogTitle").css({ "margin-bottom": "0" });
+//     } else {
+//       $("#navigator").css({ position: "fixed", top: "0" });
+//       $("#blogTitle").css({ "margin-bottom": "100px" });
+//     }
+//   } else {
+//     $("#navigator").css({ position: "static" });
+//     $("#blogTitle").css({ "margin-bottom": "0" });
+//   }
+//   sTop2 = sTop;
+//   var scroHei = $(window).scrollTop();
+//   if (scroHei > 500) {
+//     $(".fly_top").css("display", "inline-block");
+//     $(".catalogueMain").attr(
+//       "style",
+//       "position:fixed;top:10px;width:230px;height:calc(100% - 100px);overflow:auto"
+//     );
+//     $("#sideBarMain").attr(
+//       "style",
+//       "position:fixed;top:10px;width:230px;height:calc(100% - 100px);overflow:auto"
+//     );
+//   } else {
+//     $(".fly_top").css("display", "none");
+//     $(".catalogueMain").attr("style", "");
+//     $("#sideBarMain").attr("style", "");
+//   }
+// });
 $("#sideBar").before(
   '<div id="catalogue" ><div class="catalogueMain"></div><div>'
 );
