@@ -367,3 +367,9 @@ pre:not([data-dark-theme]) .cnb-code-toolbar {
 #cnblogs_post_body table::-webkit-scrollbar {
     background-color: transparent
 }
+
+
+.tippy-box[data-placement^="top"] > .tippy-arrow:before {
+    color: #495a60;
+}
+
