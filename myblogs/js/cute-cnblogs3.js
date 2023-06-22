@@ -405,6 +405,18 @@ $(window).resize(function () {
 //     $("#sideBarMain").attr("style", "");
 //   }
 // });
+let nav = document.querySelector('#navigator')
+
+window.addEventListener('scroll',function(e){
+  if(window.pageYOffset > nav.offsetTop){
+    nav.style.position = 'fixed'
+    nav.style.top = '0px'
+  }else{
+    nav.style.position = 'static'
+  }
+})
+
+
 $("#sideBar").before(
   '<div id="catalogue" ><div class="catalogueMain"></div><div>'
 );
