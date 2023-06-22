@@ -415,8 +415,8 @@ window.addEventListener('scroll', function (e) {
     nav.style.top = '0px'
     pic.setAttribute('style', 'padding-bottom: ' + nav.offsetHeight + 'px;')
   } else {
-    pic.setAttribute('style', 'padding-bottom: 0;')
     nav.style.position = 'static'
+    pic.setAttribute('style', 'padding-bottom: 0;')
   }
 })
 
