@@ -405,22 +405,23 @@ $(window).resize(function () {
 //     $("#sideBarMain").attr("style", "");
 //   }
 // });
-let nav = document.querySelector('#navigator')
-let pic = document.querySelector('#blogTitle')
-let poem = document.querySelector('.poem-wrap')
-
-window.addEventListener('scroll', function (e) {
-  let t = $('body, html').scrollTop();   // 目前监听的是整个body的滚动条距离
-  if (t > pic.offsetHeight) {
-    nav.style.position = 'fixed'
-    nav.style.top = '0px'
-    poem.setAttribute('style', 'padding-top: ' + nav.offsetHeight + 'px;')
-  } else {
-    poem.setAttribute('style', 'padding-top: 0;')
-    nav.style.position = 'static'
-  }
+jQuery(document).ready(function($) {
+  let nav = document.querySelector('#navigator')
+  let pic = document.querySelector('#blogTitle')
+  let poem = document.querySelector('.poem-wrap')
+  
+  window.addEventListener('scroll', function (e) {
+    let t = $('body, html').scrollTop();   // 目前监听的是整个body的滚动条距离
+    if (t > pic.offsetHeight) {
+      nav.style.position = 'fixed'
+      nav.style.top = '0px'
+      poem.setAttribute('style', 'padding-top: ' + nav.offsetHeight + 'px;')
+    } else {
+      poem.setAttribute('style', 'padding-top: 0;')
+      nav.style.position = 'static'
+    }
+  })
 })
-
 
 $("#sideBar").before(
   '<div id="catalogue" ><div class="catalogueMain"></div><div>'
