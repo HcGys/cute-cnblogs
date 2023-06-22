@@ -409,9 +409,6 @@ jQuery(document).ready(function($) {
   let nav = document.querySelector('#navigator')
   let pic = document.querySelector('#blogTitle')
   let poem = document.querySelector('#poem')
-  let main = document.querySelector('#main')
-
-  let sidebar = document.querySelector('#sideBar')
   
   window.addEventListener('scroll', function (e) {
     let t = $('body, html').scrollTop();   // 目前监听的是整个body的滚动条距离
@@ -422,16 +419,6 @@ jQuery(document).ready(function($) {
     } else {
       poem.setAttribute('style', 'padding-top: 0;')
       nav.style.position = 'static'
-    }
-
-    if (t > pic.offsetHeight +  poem.offsetHeight) {
-      sidebar.style.position = 'fixed'
-      sidebar.setAttribute('style', 'position: fixed; right: 7em; top:' + nav.offsetHeight + 'px;')
-      main.setAttribute('style', 'right: 13em; position: relative;')
-    } else {
-      sidebar.style.position = 'static'
-      sidebar.setAttribute('style', '')
-      main.setAttribute('style', '')
     }
 
   })
