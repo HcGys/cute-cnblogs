@@ -409,7 +409,6 @@ jQuery(document).ready(function($) {
   let nav = document.querySelector('#navigator')
   let pic = document.querySelector('#blogTitle')
   let poem = document.querySelector('#poem')
-  let main = document.querySelector('#main')
 
   let sidebar = document.querySelector('#sideBar')
   
@@ -426,12 +425,10 @@ jQuery(document).ready(function($) {
 
     if (t > pic.offsetHeight +  poem.firstChild.offsetHeight) {
       sidebar.style.position = 'fixed'
-      sidebar.setAttribute('style', 'top: 1em; right: 8em;')
-      main.setAttribute('style', 'right: 13em; position: relative;')
+      sidebar.setAttribute('style', 'position: fixed, top: 1em; right: 8em;')
     } else {
       sidebar.style.position = 'static'
       sidebar.setAttribute('style', '')
-      main.setAttribute('style', '')
     }
 
   })
