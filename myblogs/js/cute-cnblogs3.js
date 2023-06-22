@@ -409,6 +409,9 @@ jQuery(document).ready(function($) {
   let nav = document.querySelector('#navigator')
   let pic = document.querySelector('#blogTitle')
   let poem = document.querySelector('#poem')
+  let main = document.querySelector('#main')
+
+  let sidebar = document.querySelector('#sideBar')
   
   window.addEventListener('scroll', function (e) {
     let t = $('body, html').scrollTop();   // 目前监听的是整个body的滚动条距离
@@ -421,6 +424,16 @@ jQuery(document).ready(function($) {
       nav.style.position = 'static'
     }
 
+    if (t > pic.offsetHeight +  poem.offsetHeight) {
+      sidebar.style.position = 'fixed'
+      sidebar.setAttribute('style', 'position: fixed; right: 7em; top:' + nav.offsetHeight + 'px;')
+      main.setAttribute('style', 'right: 13em; position: relative;')
+    } else {
+      sidebar.style.position = 'static'
+      sidebar.setAttribute('style', '')
+      main.setAttribute('style', '')
+    }
+
   })
 })
 
@@ -429,11 +442,12 @@ $("#sideBar").before(
 );
 $(".catalogue_btn").click(function () {
   var w = $(window).width();
+  let nav = document.querySelector('#navigator')
   if ($("#catalogue").css("visibility") == "hidden") {
     $("#catalogue").css("display", "inline-block");
     $("#catalogue").attr(
       "style",
-      "visibility: visible; clip-path: circle(100% at 50% 50%); transition: all 0.3s ease-in-out 0s;"
+      "visibility: visible; clip-path: circle(100% at 50% 50%); transition: all 0.3s ease-in-out 0s;" + 'position: fixed; right: 7em; top:' + nav.offsetHeight + 'px;'
     );
     $("#sideBar").attr(
       "style",
@@ -696,7 +710,7 @@ function showSide(cla) {
       $("#sideBar").css("display", "inline-block");
       $("#sideBar").attr(
         "style",
-        "visibility: visible; clip-path: circle(100% at 50% 50%); transition: all 0.3s ease-in-out 0s;"
+        "visibility: visible; clip-path: circle(100% at 50% 50%); transition: all 0.3s ease-in-out 0s;" + 'position: fixed; right: 7em; top:' + nav.offsetHeight + 'px;'
       );
     } else {
       $("#sideBar").attr(
@@ -777,12 +791,12 @@ $(".catalogue").click(function () {
     if (w > 1300) {
       $("#sideBar").attr(
         "style",
-        "visibility: visible; clip-path: circle(100% at 50% 50%); transition: all 0.3s ease-in-out 0s;"
+        "visibility: visible; clip-path: circle(100% at 50% 50%); transition: all 0.3s ease-in-out 0s;" + 'position: fixed; right: 7em; top:' + nav.offsetHeight + 'px;'
       );
     } else {
       $("#sideBar").attr(
         "style",
-        "visibility: visible; clip-path: circle(100% at 50% 50%); transition: all 0.3s ease-in-out 0s;"
+        "visibility: visible; clip-path: circle(100% at 50% 50%); transition: all 0.3s ease-in-out 0s;" + 'position: fixed; right: 7em; top:' + nav.offsetHeight + 'px;'
       );
     }
     localStorage.setItem("catalogue", "show");
