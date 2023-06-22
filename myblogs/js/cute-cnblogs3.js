@@ -407,16 +407,17 @@ $(window).resize(function () {
 // });
 let nav = document.querySelector('#navigator')
 let pic = document.querySelector('#blogTitle')
+let poem = document.querySelector('#poem-wrap')
 
 window.addEventListener('scroll', function (e) {
   let t = $('body, html').scrollTop();   // 目前监听的是整个body的滚动条距离
   if (t > pic.offsetHeight) {
     nav.style.position = 'fixed'
     nav.style.top = '0px'
-    pic.setAttribute('style', 'padding-bottom: ' + nav.offsetHeight + 'px;')
+    poem.setAttribute('style', 'padding-top: ' + nav.offsetHeight + 'px;')
   } else {
+    poem.setAttribute('style', 'padding-top: 0;')
     nav.style.position = 'static'
-    pic.setAttribute('style', 'padding-bottom: 0;')
   }
 })
 
