@@ -406,9 +406,11 @@ $(window).resize(function () {
 //   }
 // });
 let nav = document.querySelector('#navigator')
+let pic = document.querySelector('#blogTitle')
 
 window.addEventListener('scroll',function(e){
-  if(window.pageYOffset > nav.offsetTop){
+  let t = $('body, html').scrollTop();   // 目前监听的是整个body的滚动条距离
+  if(t > pic.style.height){
     nav.style.position = 'fixed'
     nav.style.top = '0px'
   }else{
