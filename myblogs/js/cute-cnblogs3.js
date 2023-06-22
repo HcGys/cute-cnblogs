@@ -413,6 +413,9 @@ window.addEventListener('scroll',function(e){
   if(t > pic.offsetHeight){
     nav.style.position = 'fixed'
     nav.style.top = '0px'
+	  var div = document.createElement("div");
+    div.style.height = nav.offsetHeight
+    div.insertBefore(pic);  
   }else{
     nav.style.position = 'static'
   }
