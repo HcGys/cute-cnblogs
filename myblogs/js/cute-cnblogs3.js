@@ -415,7 +415,7 @@ window.addEventListener('scroll',function(e){
     nav.style.top = '0px'
 	  var div = document.createElement("div");
     div.style.height = nav.offsetHeight
-    insertAfter(pic, div);  
+    document.querySelector('#header').insertBefore(div, pic);  
   }else{
     nav.style.position = 'static'
   }
