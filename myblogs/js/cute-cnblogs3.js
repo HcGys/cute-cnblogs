@@ -424,7 +424,7 @@ jQuery(document).ready(function($) {
       nav.style.position = 'static'
     }
 
-    if (t > pic.offsetHeight +  poem.offsetHeight + 136) {
+    if (t > pic.offsetHeight +  poem.offsetHeight) {
       sidebar.style.position = 'fixed'
       sidebar.setAttribute('style', 'position: fixed; top: 0.1em; right: 7em;')
       main.setAttribute('style', 'right: 13em; position: relative;')
