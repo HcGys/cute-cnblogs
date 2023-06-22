@@ -413,9 +413,9 @@ window.addEventListener('scroll', function (e) {
   if (t > pic.offsetHeight) {
     nav.style.position = 'fixed'
     nav.style.top = '0px'
-    pic.setAttribute('style', 'margin-bottom: 50px')
+    pic.setAttribute('style', 'margin-bottom: ' + nav.offsetHeight + ';')
   } else {
-    pic.setAttribute('style', 'margin-bottom: 0')
+    pic.setAttribute('style', 'margin-bottom: 0;')
     nav.style.position = 'static'
   }
 })
