@@ -408,15 +408,13 @@ $(window).resize(function () {
 let nav = document.querySelector('#navigator')
 let pic = document.querySelector('#blogTitle')
 
-window.addEventListener('scroll',function(e){
+window.addEventListener('scroll', function (e) {
   let t = $('body, html').scrollTop();   // 目前监听的是整个body的滚动条距离
-  if(t > pic.offsetHeight){
+  if (t > pic.offsetHeight) {
     nav.style.position = 'fixed'
     nav.style.top = '0px'
-	  var div = document.createElement("div");
-    div.style.height = nav.offsetHeight
-    document.querySelector('#header').insertBefore(div, pic);  
-  }else{
+    pic.setAttribute('style', 'margin-top: 50.234px')
+  } else {
     nav.style.position = 'static'
   }
 })
